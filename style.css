@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.parent
+{
+     width: 100%;
+     height: 100vh;
+     background-color: aquamarine;
+     padding-top: 10px;
+     .headline
+        {
+            color:#fff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    .container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        #surveyForm
+        {
+            width: 30%;
+            box-shadow: 6px 6px #86A789;
+            background-color: #fff;
+            margin-top: 18px;
+            padding: 16px;
+            .form-group
+            {
+                display: flex;
+                flex-direction: column;
+                .title-form
+                {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin: 2px 8px;
+                }
+                .title-inp
+                {
+                    padding: 6px 12px;
+                    margin: 2px 8px;
+                }
+                .dob-inp
+                {
+                    width: 50%;
+                    margin: 2px 8px;
+                    padding: 4px 12px;
+                }
+                .gender
+                {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                }
+            }
+            .btns
+            {
+                display: flex !important;
+                margin-top: 12px;
+                #submitBtn
+                {
+                    padding: 12px;
+                    width: 100px;
+                    margin: 8px;
+                    border:1px solid #363062;
+                    background-color: #363062;
+                    color:#fff;
+                    border-radius: 8px;
+                    font-family: poppins;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    &:hover
+                    {
+                        background-color: #fff;
+                        border:1px solid #363062;
+                        color:#363062;
+                    }
+                }
+                #resetBtn
+                {
+                    padding: 12px;
+                    width: 100px;
+                    margin: 8px;
+                    border:1px solid #F99417;
+                    background-color: #F99417;
+                    color:#fff;
+                    border-radius: 8px;
+                    font-family: poppins;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    &:hover
+                    {
+                        background-color: #fff;
+                        border:1px solid #F99417;
+                        color:#F99417;
+                    }
+                }
+            }
+            .gender-div
+            {
+                display: flex;
+                align-items: center;
+                padding: 8px 0px;
+                .title-form
+                {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin: 2px 4px;
+                    margin-right: 16px;
+                }
+                .gend
+                {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-left: 4px;
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1025px)
+{
+    #surveyForm
+    {
+        width: 60% !important;
+        border:1px solid green;
+    }
+}
+@media(max-width:768px)
+{
+    #surveyForm
+    {
+        width: 80% !important;
+    }
+}

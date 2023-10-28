@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="./logics.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="parent">
+        <h1 class="headline">Customer Survey Form</h1>
+        <div class="container"> 
+        
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="firstName" class="title-form">First Name:</label>
+                    <input type="text" id="firstName" required class="title-inp">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="title-form">Last Name:</label>
+                    <input type="text" id="lastName" required class="title-inp">
+                </div>
+                <div class="form-group">
+                    <label for="dob" class="title-form">Date of Birth:</label>
+                    <input type="date" id="dob" required class="dob-inp">
+                </div>
+                <div class="form-group">
+                    <label for="country" class="title-form">Country:</label>
+                    <select id="country" required class="dob-inp">
+                        <option value="">Select a country</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                <div class=" gender-div">
+                    <label class="title-form">Gender:</label>
+                    <input type="checkbox" id="male" name="gender" value="male" class="gender"> <p class="gend">Male</p>
+                    <input type="checkbox" id="female" name="gender" value="female" class="gender"> <p class="gend">Female</p>
+                </div>
+                <div class="form-group">
+                    <label for="profession" class="title-form">Profession:</label>
+                    <input type="text" id="profession" required class="title-inp">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="title-form">Email:</label>
+                    <input type="email" id="email" required class="title-inp">
+                </div>
+                <div class="form-group">
+                    <label for="mobile" class="title-form">Mobile Number:</label>
+                    <input type="tel" id="mobile" required class="title-inp">
+                </div>
+                <div class=" btns">
+                    <button type="button" id="submitBtn" onclick="onSubmit()">Submit</button>
+                    <button ty pe="button" id="resetBtn" onclick="onReset()">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
